@@ -5,32 +5,64 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Frases Motivacionais e Inspiradoras</title>
+  <!-- Importando fonte do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(to bottom right, #f7fafc, #e2e8f0);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 40px;
       color: #2d3748;
+      min-height: 100vh;
+      background: linear-gradient(-45deg, #f3c4fb, #ffd6e8, #d0b3ff, #f9ccff);
+      background-size: 600% 600%;
+      animation: gradientBackground 15s ease infinite;
     }
+
+    @keyframes gradientBackground {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #2b6cb0;
+      font-family: 'Dancing Script', cursive;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #6b46c1;
+      text-align: center;
     }
+
+    .autor {
+      font-size: 1rem;
+      margin-bottom: 30px;
+      color: #805ad5;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .autor .rosa {
+      font-size: 1.2rem;
+    }
+
     ul {
       list-style: none;
       padding: 0;
       max-width: 800px;
     }
+
     li {
-      background: #ffffff;
-      border-left: 5px solid #3182ce;
+      background: #ffffffee;
+      border-left: 5px solid #b83280;
       padding: 15px 20px;
       margin-bottom: 15px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
       border-radius: 8px;
       font-size: 1.2rem;
     }
@@ -38,6 +70,9 @@
 </head>
 <body>
   <h1>Frases Motivacionais e Inspiradoras</h1>
+  <div class="autor">
+    POR: JAMILLY DA ROCHA SILVA <span class="rosa">🌹</span>
+  </div>
   <ul>
     <li>"Não espere por oportunidades. Crie-as."</li>
     <li>"Você é capaz de coisas incríveis. Acredite nisso todos os dias."</li>
